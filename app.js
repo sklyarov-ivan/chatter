@@ -13,7 +13,6 @@ app.use(expressLayouts)
 app.get('/', function(req, res){
     res.render('index')
 });
-logger.debug('here')
 var server = app.listen(3000, function() {
     logger.info('Listening on port %d', server.address().port);
 });
